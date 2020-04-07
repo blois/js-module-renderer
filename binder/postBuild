@@ -3,6 +3,7 @@
 set -o errexit
 set -o xtrace
 
+jupyter labextension uninstall jupyter-offlinenotebook --no-build
 jlpm
 # Build Typescript source
 jlpm build
