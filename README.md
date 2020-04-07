@@ -1,8 +1,8 @@
 # js-module-renderer
 
-![Github Actions Status](https://github.com/blois/myextension/workflows/Build/badge.svg)
+![Github Actions Status](https://github.com/blois/js-module-renderer/workflows/Build/badge.svg)
 
-Rendeer for Javascript modules.
+See https://github.com/Quansight-Labs/jupyter-output-spec.
 
 
 
