@@ -2,6 +2,8 @@
 
 ![Github Actions Status](https://github.com/blois/js-module-renderer/workflows/Build/badge.svg)
 
+[![Binder Logo](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/blois/js-module-renderer/master?urlpath=lab%2Ftree%tests.ipynb)
+
 See https://github.com/Quansight-Labs/jupyter-output-spec.
 
 

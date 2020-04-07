@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o xtrace
+
+jupyter labextension uninstall jupyter-offlinenotebook --no-build
+jlpm
+# Build Typescript source
+jlpm build
+# Link your development version of the extension with JupyterLab
+jupyter labextension link .
