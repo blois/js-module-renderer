@@ -1,5 +1,5 @@
 export interface CommMessage {
-  readonly data: { [key: string]: any };
+  readonly data: any;
   readonly buffers?: ArrayBuffer[];
 }
 
@@ -39,7 +39,7 @@ export interface RenderOptions {
   // Any changes of the node
   readonly nodeUpdates: AsyncIterable<NodeEvent>;
   // Promise will reject if not connected to kernel.
-  createComm(targetName: string, commId: string): Promise<CommChannel>;
+  createComm(targetName: string): Promise<CommChannel>;
 }
 
 /** Interface representing the expected structure exported by the JS module. */

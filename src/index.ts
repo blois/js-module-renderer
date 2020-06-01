@@ -155,11 +155,11 @@ class RenderOptionsImpl {
     this.renderData = new RenderDataEvent(data, metadata);
   }
 
-  async createComm(targetName: string, commId: string): Promise<CommChannel> {
+  async createComm(targetName: string): Promise<CommChannel> {
     if (!this.kernel) {
       throw new Error('not supported');
     }
-    const comm = this.kernel.createComm(targetName, commId);
+    const comm = this.kernel.createComm(targetName);
 
     const commImpl = new CommImpl(comm);
     await comm.open().done;
